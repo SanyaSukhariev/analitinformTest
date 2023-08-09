@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для обертки слайдера */
+.beautifulSlider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Стили для слайдов */
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.contentInfo{
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+.contentInfo h1{
+  font-family: 'Merriweather', serif;
+    font-size: 45px;
+    font-weight: 800;
+    color:cadetblue;
+}
+.contentInfo p{
+  font-family: 'Merriweather', serif;
+    font-size: 25px;
+    line-height: 28px;
+    color: grey;
+    font-weight: 600;
+}
+
+ 
+  .imageInfo .image{
+    max-width: 500px;
+    border-radius: 10%;
+  }
+  .itemsInfo {
+
+    line-height: 25px;
+    font-weight: 400;
+  }
+.itemsInfo li{
+  font-family: 'Merriweather', serif;
+}
+  
+  /* OurProducts */
+  .ourProducts{
+    margin-top: 100px;
+    padding: 80px;
+    background-color: #676767;
+  }
+  
+  .ourProducts h1{
+    text-align: center;
+     font-size: 45px;
+     font-family: Montserrat;
+    color: white;
+    /* color:cadetblue; */
+  }
+
+  .itemBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  
+   }
+   
+  .box{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url("https://svitagro.com.ua/wp-content/uploads/2018/05/shutterstock_325466795.jpg") no-repeat center center/cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 300px ;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    
+  }
+
+  .box:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+  
+  }
+  .box1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease;
+  
+  }
+  .box2:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+  
+  }
+
+.box1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url('https://svitagro.com.ua/wp-content/uploads/2018/05/shutterstock_445559818.jpg') no-repeat center center/cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    cursor: pointer;
+    
+    border-radius: 300px ;
+    background-size: cover; 
+    transition: transform 0.3s ease;
+}
+.itemBox a{
+    text-decoration: none;
+}
+.itemBox a:hover{
+    text-decoration: underline;
+    border: 2px solid darkseagreen;
+}
+.itemBox h2:hover{
+  color: deepskyblue
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url('https://svitagro.com.ua/wp-content/uploads/2021/05/friends-1149841-scaled.jpg') no-repeat center center/cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 300px ;
+    background-size: cover; 
+    transition: transform 0.3s ease;
+}
+
+
+/* Partners  */
+.partners{
+  margin-top: 100px;
+}
+.partners h2{
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  color:cadetblue;
+}
+
+.ourPartners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  
+
+.ourPartners .items{
+  flex: 0 0 calc(33% - 10px); 
+  margin:7px;
+ 
+}
+.items{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.items  {
+ padding: 50px;
+}
+
+.items a{
+  text-decoration: none;
+  color:darkcyan;
+}
+.items a:hover{
+color: palegreen;
+
+}
+.items p{
+font-size: 18px;
+color: #676767;
+font-family: Montserrat;
+font-weight: 400;
+
+}
+
+
+/* contacts */
+.contacts{
+  margin-top: 100px;
+  
+}
+.contacts h2{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  color:cadetblue;
+}
+.contactsInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactItems{
+  margin: 50px;
+}
+.maps{
+    margin-top: 100px;
+   
+}
+.contactsInfo p{
+    font-family: Montserrat;
+    font-weight: 600;
+    color:dimgrey;
+    font-size: 18px;
+}
+
+.footer{
+  display: flex;
+  background-color:black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+
+}
+
+/* Стили для изображений в слайдах */
+
+/* Медиа-запрос для адаптации стилей на маленьких экранах */
+@media(max-width:1200px){
+  .response {
+    max-width: 64%; 
+    object-fit: cover; 
+  }
+  .contentInfo h1{
+    text-align: center;
+  }
+  .contentInfo p{
+    text-align: center;
+  }
+  .box, .box1, .box2 {
+    width: 350px;
+    height: 350px;
+  }
+  .itemsInfo{
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .response{
+    width: 70%;
+  }
+} 
+
+@media(max-width:1400px){
+  .response {
+    max-width: 73%;
+    min-height: 50%;
+    object-fit: cover; 
+  }
+}
+
+
+@media(max-width:1250px){
+  .itemBox h2{
+    font-size: 23px;
+    
+}
+  .box, .box1, .box2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Адаптация для разных разрешений и устройств */
+@media(max-width:1200px){
+  .box, .box1, .box2 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;   
+  }
+  .imageInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentInfo p{
+    font-size: 20px;
+
+  }
+  .image{
+    width: 450px;
+    height: 450px;
+  }
+  .ourProdContent{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+  }
+ 
+  .partners h2{
+   
+    color: cadetblue;
+    font-size: 54px;
+  }
+  .contacts h2{
+    font-size: 54px;
+   
+    color: cadetblue;
+  }
+}
+
+@media(max-width:1020px){
+.imageInfo .image{
+  width: 380px;
+  height: 380px;
+}
+.itemsInfo {
+  font-size: 14px;
+}
+}
+
+@media(max-width:980px){
+    .contentInfo h1{
+      font-size: 38px;
+     
+    }
+    .contentInfo p{
+      font-size: 21px;
+    }
+    .response{
+      width: 60%;
+    }
+}
+@media(max-width:930px){
+  .imageInfo .image{
+    width: 360px;
+    height: 360px;
+  }
+  .contentInfo p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 905px){
+  .contentInfo h1{
+    font-size: 31px;
+   
+  }
+  .contentInfo p{
+    font-size: 18px;
+  }
+  .itemsInfo{
+    font-size: 12px;
+  }
+  .itemBox h2{
+    font-size: 21px;
+    
+}
+.box, .box1, .box2 {
+  width: 280px;
+  height: 280px;
+}
+  .response{
+  width: 50%;
+}
+}
+
+@media(max-width:840px){
+  .itemBox h2{
+    font-size: 20px;
+    
+}
+.box, .box1, .box2 {
+  width: 260px;
+  height: 260px;
+}
+.contentInfo p{
+  font-size: 14px;
+}
+.itemsInfo{
+  font-size: 11px;
+}
+}
+
+@media (max-width: 800px){
+  .contentInfo h1{
+    font-size: 32px;
+   
+  }
+  .partners h2{
+    font-size: 43px;
+   
+  }
+  .contacts h2{
+    font-size: 43px;
+  }
+  .ourProdContent h1{
+    font-size: 43px;
+  }
+  .itemBox h2{
+    font-size: 18px;
+    
+}
+.image{
+  width: 350px;
+  height: 350px;
+}
+.box, .box1, .box2 {
+  width: 250px;
+  height: 250px;
+}
+}
+@media (max-width: 780px){
+  .contentInfo h1{
+    font-size: 35px;
+   
+  }
+  .contentInfo p{
+    font-size: 23px;
+  }
+  .itemsInfo{
+    font-size: 17px;
+  }
+  .imageInfo{
+    margin-top: 80px;
+  }
+  .imageInfo .image{
+    width: 380px;
+    height: 380px;
+  }
+
+}
+
+@media (max-width: 730px){
+  .contentInfo p{
+    font-size: 20px;
+    
+  }
+  .itemsInfo{
+    font-size: 15px;
+  }
+  .contactItems{
+    margin: 38px;
+  }
+}
+
+@media (max-width: 700px){
+  .contentInfo h1{
+    font-size: 33px;
+   
+  }
+  .contentInfo p{
+    font-size: 19px;
+    
+  }
+  .itemsInfo{
+    font-size: 15px;
+  }
+  .ourProdContent h1{
+    font-size: 35px;
+  }
+  .itemBox h2{
+      font-size: 15px;
+      
+  }
+  .box, .box1, .box2 {
+    width: 200px;
+    height: 200px;
+  }
+  .response{
+    width: 40%;
+  }
+}
+
+@media(max-width:650px){
+  .image{
+    width: 300px;
+    height: 300px;
+  }
+  .contactItems{
+    margin: 30px;
+  }
+}
+@media(max-width:640px){
+  .image{
+    width: 300px;
+    height: 300px;
+  }
+  .contactItems{
+    margin: 25px;
+  }
+
+  .contactsInfo p{
+    font-size: 11px;
+    
+  }
+  .box, .box1, .box2 {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media(max-width:610px){
+ 
+  .contentInfo p{
+    font-size: 18px;
+    
+  }
+  .itemsInfo{
+    font-size: 15px;
+  }
+  .partners h2{
+    font-size: 38px;
+  }
+  .ourPartners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts h2{
+    font-size: 38px;
+  }
+  .contactsInfo p{
+    font-size: 13px;
+  }
+  .contactsInfo a{
+    font-size: 13px;
+  }
+}
+@media(max-width:600px){
+  .contentInfo h1{
+    font-size: 32px;
+  }
+  .contentInfo p{
+    font-size: 15px;
+  }
+ 
+
+}
+@media(max-width:550px){
+  .contentInfo h1{
+    font-size: 30px;
+  }
+  .contentInfo p{
+    font-size: 15px;
+  }
+  .itemsInfo{
+    font-size: 14px;
+  }
+  .itemBox h2{
+    font-size: 15px;
+  }
+  .box, .box1, .box2 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width:520px){
+  .contentInfo h1{
+    font-size: 27px;
+  }
+  .contentInfo p{
+    font-size: 14px;
+  }
+  .itemsInfo{
+    font-size: 13px;
+  }
+  .image{
+    width: 250px;
+    height: 250px;
+  }
+  .itemBox h2{
+    font-size: 12px;
+  }
+  .box, .box1, .box2 {
+    width: 130px;
+    height: 130px;
+  }
+  
+}
+
+@media(max-width:480px){
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentInfo h1{
+    font-size: 28px;
+  }
+  .contentInfo p{
+    font-size: 17px;
+  }
+  .itemsInfo{
+    font-size: 15px;
+  }
+  .image{
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+  }
+ 
+  .box, .box1, .box2 {
+    width: 2100px;
+    height: 270px;
+  }
+  .contactsInfo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   align-items: center;
+  }
+  .contactsInfo p{
+    font-size: 18px;
+  }
+  .contactsInfo a{
+    font-size: 18px;
+    color:cadetblue;
+  }
+}
+@media(max-width:415px){
+.contentInfo p{
+  font-size: 15px;
+}
+.itemsInfo{
+  font-size: 14px;
+}
+.box, .box1, .box2 {
+  width: 180px;
+  height: 180px;
+}
+.itemBox h2{
+  font-size: 15px;
+ }
+}
+@media(max-width:400px){
+  .contentInfo p{
+    font-size: 15px;
+  }
+  .image{
+    width: 250px;
+    height: 250px;
+  }
+ .ourProdContent h1{
+  font-size: 32px;
+ }
+ .itemBox h2{
+  font-size: 18px;
+ }
+ .box, .box1, .box2 {
+  width: 2100px;
+  height: 170px;
+}
+}
+@media(max-width:350px){
+ .contentInfo h1{
+  font-size: 27px;
+ }
+ .contentInfo p{
+  font-size: 13px;
+}
+.ourProdContent h1{
+  font-size: 25px;
+ }
+ .itemBox h2{
+  font-size: 13px;
+ }
+ .box, .box1, .box2 {
+  width: 150px;
+  height: 150px;
+}
+.partners h2{
+  font-size: 32px;
+}
+.contacts h2{
+  font-size: 32px;
+}
+.contactsInfo p{
+  font-size: 15px;
+}
+.contactsInfo a{
+  font-size: 15px;
+  color:cadetblue;
+}
+}

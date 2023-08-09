@@ -1,0 +1,131 @@
+
+.contactsImage{
+    position: relative;
+}
+.contactsImage img{
+    display: block;
+    width: 100%;
+    height: 70vh;
+}
+.contactsImage::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contactsImage h1{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 500;
+    z-index: 2;
+}
+.contactsContent{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+
+.contactsContent h2{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    color:cadetblue;
+    
+}
+
+
+.itemsContact p{
+    font-family: Montserrat;
+    font-weight: 600;
+    color:dimgrey;
+    font-size: 18px;
+}
+
+.contactsContent {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.contactsContent {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contactItemsWrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemsContact {
+    flex: 0 0 calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+
+}
+
+
+.itemsContact a {
+    display: block;
+    text-decoration: none;
+    color:cadetblue;
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.itemsContact a:hover {
+    text-decoration: underline;
+}
+@media(max-width:1000px) {
+    .contactsImage h1{
+        font-size: 63px;
+    }
+}
+@media(max-width:850px) {
+    .contactsImage h1{
+        font-size: 55px;
+    }
+}
+@media(max-width:550px) {
+    .contactsImage h1{
+        font-size: 55px;
+    }
+    .itemsContact p{
+        font-size: 15px;
+    }
+    .itemsContact a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:550px) {
+    .contactsImage h1{
+        font-size: 45px;
+    }
+    .itemsContact p{
+        font-size: 12px;
+    }
+    .itemsContact a{
+        font-size: 12px;
+    }
+    .contactsContent h2{
+        font-size: 25px;
+    }
+}

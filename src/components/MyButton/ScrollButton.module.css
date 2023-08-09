@@ -1,0 +1,18 @@
+
+ .scrollBtn{
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+.scrollBtn.visible {
+  display: block;
+}

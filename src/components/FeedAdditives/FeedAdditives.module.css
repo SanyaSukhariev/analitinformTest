@@ -1,0 +1,250 @@
+.feedBg{
+    position: relative;
+}
+
+.feedBg img{
+    display: block;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+   
+}
+.feedBg::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      
+}
+.feedBg h1{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    z-index: 2;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 400;
+  }
+
+  /* infoPanel */
+
+  .infoPanel{   
+    
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .infoConteiner{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .sectionLeft, .sectionRight {
+    flex: 1; 
+    padding: 20px;
+  }
+
+
+.sectionLeft h3{
+  color:cadetblue;
+}
+.sectionLeft li{
+  list-style: none;
+  padding: 25px;
+}
+.sectionLeft a:hover{
+  font-size: 23px;
+}
+.sectionLeft a{
+  font-size: 18px;
+  font-weight: 600;
+}
+.sectionLeft a{
+  text-decoration: none;
+  color: #39b54a;
+}
+
+/* coksobiostatick */
+
+.koksiodiostatick h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.koksiodiostatick p{
+  margin-top: 50px;
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+
+.column{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.termItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.term  {
+  display: inline-block;
+  padding: 20px;
+  min-width: 200px;
+  color: #39b54a;
+  font-size: 18px;
+  font-weight: 600;
+}
+.description{
+  display: inline-block;
+  padding: 20px;
+  
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+
+/* amino */
+.aminokislotu h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.amino{
+  display: flex;
+  flex-direction: column;
+}
+.aminokislotu p{
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.aminokislotu{
+  margin-top: 50px;
+}
+.aminokislotu p{
+  margin-top: 50px;
+}
+
+
+/* vitamino */
+.vitamino h1{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color:cadetblue;
+}
+.vitamino h3{
+  color:rgb(62, 85, 86);
+  font-size: 23px;
+  font-weight: 600;
+}
+.vitamino{
+  margin-top: 50px;
+}
+.vitamino h3{
+  margin-top: 50px;
+}
+/* organik */
+
+.organik h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.organik p{ 
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.organik{
+  margin-top: 50px;
+}
+.organik p{
+  margin-top: 50px;
+}
+@media(max-width:880px){
+  .feedBg h1{
+    font-size: 48px;
+  }
+  .feedBg img{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .infoConteiner{
+    display: flex;
+    
+  }
+  .sectionLeft li{
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+ 
+}
+@media(max-width:860px){
+  .sectionLeft h3{
+   font-size: 15px;
+ 
+  }
+ 
+  .sectionLeft a{
+    font-size: 14px;
+  }
+}
+@media(max-width:810px){
+  .sectionLeft{
+    display: none;
+  }
+}
+@media(max-width:650px){
+    .sectionRight{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    
+    }
+    .feedBg h1{
+      font-size: 38px;
+    }
+    .sectionRight{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 1200px;
+    }
+
+}
+@media(max-width:450px){
+  .feedBg h1{
+    font-size: 35px;
+  }
+  .termItem{
+    display: block;
+  }
+}

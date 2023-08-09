@@ -1,0 +1,62 @@
+/* Стили для бургер-меню */
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: 0.4s;
+  }
+  
+  .open .menu-items {
+    display: flex;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .burger-menu {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  

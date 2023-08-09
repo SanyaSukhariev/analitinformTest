@@ -1,0 +1,244 @@
+.vetImageBg{
+    position: relative;
+}
+.vetImageBg img{
+    display: block;
+    width: 100%;
+    height: 90vh;
+}
+
+.vetImageBg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Значение альфа-канала определяет степень затемнения */
+    z-index: 1;
+    
+}
+.vetImageBg h1{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    z-index: 2;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+/* .infoPanel{
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+.content{
+  max-width: 1200px;
+  margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.infoContainer{
+    display: flex;
+    margin-top: 100px;
+}
+/* .sectionLeft, .sectionRight {
+    flex: 1; 
+    padding: 20px;
+  } */
+  
+   .sectionLeft {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 300px; */
+    
+  }
+  
+.sectionLeft h1{
+    color:cadetblue;
+  }
+  .sectionLeft li{
+    list-style: none;
+    padding: 25px;
+  }
+  .sectionLeft a:hover{
+    font-size: 23px;
+  }
+  .sectionLeft a{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .sectionLeft a{
+    text-decoration: none;
+    color: #39b54a;
+  }
+  .sectionLeft h1{
+    margin-bottom: 50px;
+  }
+  .sectionRight {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 100px;
+  
+  } 
+
+
+.sectionRight h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.itemsSection{
+    display: flex;
+    flex-direction: column;
+    border: 2px outset  #39b54a;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+}
+.itemsSection:hover{
+  border: 2px dashed  #39b54a;
+}
+.sectionRight p{
+    font-size: 18px;
+    color: #676767;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+.itemsSection h1{
+  margin-bottom: 50px;
+}
+
+  .sectionLeft h3{
+    color:cadetblue;
+  }
+  .sectionLeft li{
+    list-style: none;
+    padding: 10px;
+  }
+  @media(max-width:900px) {
+       .vetImageBg img{
+        display: block;
+        width: 100%;
+        height: 80vh;
+       }
+       .vetImageBg h1{
+        font-size: 57px;
+    }
+  }
+  @media(max-width:850px) {
+    
+    .vetImageBg img{
+     display: block;
+     width: 100%;
+     height: 70vh;
+    }
+}
+@media(max-width:798px){
+  .vetImageBg h1{
+    font-size: 53px;
+}
+    .sectionRight p{
+      font-size: 17px;
+    }
+}
+@media(max-width:740px){
+  .sectionRight p{
+    font-size: 15px;
+  }
+}
+@media(max-width:693px){
+  .vetImageBg h1{
+    font-size: 47px;
+}
+  .itemsSection h1{
+    font-size: 23px;
+  }
+  .sectionLeft h1{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:600px){
+  .vetImageBg h1{
+    font-size: 43px;
+}
+.sectionRight p{
+  font-size: 14px;
+}
+.itemsSection h1{
+  font-size: 21px;
+}
+.sectionLeft h1{
+  font-size: 21px;
+}
+.sectionLeft a{
+  font-size: 15px;
+}
+ .sectionLeft{
+  align-items: center;
+ }
+ .vetImageBg img{
+  display: block;
+  width: 100%;
+  height: 55vh;
+ }
+}
+@media(max-width:550px){
+  .sectionLeft{
+    display: none;
+  }
+  .sectionRight{
+    display: flex;
+    flex-direction: column;
+  }
+  .infoContainer{
+    margin-right: 15%;
+  }
+  .vetImageBg h1{
+    font-size: 38px;
+}
+.vetImageBg::before{
+  width: 50%;  
+}
+}
+@media(max-width:500px){
+  .vetImageBg img{
+    display: block;
+    width: 100%;
+    height: 55vh;
+   }
+}
+@media(max-width:415px){
+  .vetImageBg img{
+    display: block;
+    width: 100%;
+    height: 43vh;
+   }
+   .infoContainer{
+    margin-right: 20%;
+  }
+}
+@media(max-width:400px){
+  .vetImageBg img{
+    display: block;
+    width: 100%;
+    height: 45vh;
+   }
+}
+
+@media(max-width:390px){
+  .vetImageBg img{
+    display: block;
+    width: 100%;
+    height: 45vh;
+   }
+   .vetImageBg::before{
+    width: 50%;  
+}
+}
