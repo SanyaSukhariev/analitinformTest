@@ -40,18 +40,15 @@ body {
 }
 .contentInfo h1{
   font-family: 'Merriweather', serif;
-  letter-spacing: -2px;
   font-size: 38px;
-  line-height: 43px;
-  font-weight: 600;
-    color:cadetblue;
+  color:cadetblue;
 }
 .contentInfo p{
   font-family: 'Merriweather', serif;
-    font-size: 23px;
+    font-size: 25px;
     line-height: 28px;
     color: grey;
-    font-weight: 600;
+
 }
 
  
@@ -60,7 +57,6 @@ body {
     border-radius: 10%;
   }
   .itemsInfo {
-
     line-height: 25px;
     font-weight: 400;
   }
@@ -190,38 +186,51 @@ body {
   flex-wrap: wrap;
 }
   
-
-.ourPartners .items{
-  flex: 0 0 calc(33% - 10px); 
-  margin:7px;
+.partnerBlock img{
+  max-width: 100px;
+  max-height: 70px;
+}
+.ourPartners .partnerBlock{
+  flex: 0 0 calc(30% - 10px); 
+  gap: 30px;
  
 }
-.items{
-display: flex;
-flex-direction: column;
-align-items: center;
+
+
+.partnerBlock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.items  {
- padding: 50px;
+.partnerBlock:hover {
+  transform: translateY(-5px);
+  border: 1px solid darkcyan;
 }
 
-.items a{
+.partnerInfo {
+  margin-left: 10px;
+}
+
+.partnerLink {
+  display: none;
+  margin-top: 10px;
   text-decoration: none;
   color:darkcyan;
 }
-.items a:hover{
-color: palegreen;
 
-}
-.items p{
-font-size: 18px;
-color: #676767;
-font-family: 'Montserrat';
-font-weight: 400;
-
+.partnerBlock:hover .partnerLink {
+  display: block;
 }
 
+.partnerInfo a{
+  text-align: center;
+}
 
 /* contacts */
 .contacts{
@@ -389,7 +398,7 @@ font-weight: 400;
   }
 
   .contacts h2{
-    font-size: 54px;
+    font-size: 38px;
    
     color: cadetblue;
   }
@@ -433,6 +442,12 @@ font-weight: 400;
     }
     .contacts h2{
       font-size: 35px;
+    }
+    .partnerInfo{
+      width: 100%;
+    }
+    .partnerInfo p{
+      font-size: 12px;
     }
 }
 
@@ -513,6 +528,21 @@ font-weight: 400;
         width: 170px;
         height: 170px;
       }
+    
+      .partnerInfo{
+        width: 40%;
+       
+      }
+      .partnerInfo p{
+        font-size: 12px;
+      }
+    .ourPartners{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+      
+    
 }
 
 @media (max-width: 800px){
@@ -529,10 +559,14 @@ font-weight: 400;
     display: block;
       text-align:justify;
   }
+  .partnerBlock p{
+    font-size: 14px;
+  }
   .box, .box1, .box2 {
     width: 170px;
     height: 170px;
   }
+  
 
 }
 @media (max-width: 780px){
@@ -602,6 +636,9 @@ font-weight: 400;
     width: 170px;
     height: 170px;
   }
+  .partnerInfo p{
+    font-size: 11px;
+  }
 }
 @media(max-width:610px){
  
@@ -613,24 +650,14 @@ font-weight: 400;
     font-size: 15px;
   }
   .partners h2{
-    font-size: 38px;
+    font-size: 35px;
   }
-  .ourPartners{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+ 
 
   .contacts h2{
-    font-size: 38px;
+    font-size: 35px;
   }
-  .contactsInfo p{
-    font-size: 13px;
-  }
-  .contactsInfo a{
-    font-size: 13px;
-  }
+
 }
 @media(max-width:600px){
   .contentInfo h1{
@@ -660,12 +687,7 @@ font-weight: 400;
     height: 150px;
   }
   
-  .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
 }
 @media(max-width:520px){
   .contentInfo h1{
@@ -737,6 +759,10 @@ font-weight: 400;
 }
 .itemsInfo{
   font-size: 14px;
+}
+.partnerBlock img{
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .box, .box1, .box2 {

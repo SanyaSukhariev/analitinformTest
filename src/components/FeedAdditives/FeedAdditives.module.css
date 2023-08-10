@@ -27,7 +27,7 @@
     color: white;
     z-index: 2;
     font-family: Montserrat;
-    font-size: 70px;
+    font-size: 58px;
     font-weight: 400;
   }
 
@@ -207,6 +207,16 @@
 
  
 }
+@media(max-width:1050px) {
+  .feedBg img{
+    display: block;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+   
+}
+  
+}
 @media(max-width:860px){
   .sectionLeft h3{
    font-size: 15px;
@@ -218,11 +228,25 @@
   }
 }
 @media(max-width:810px){
+  .feedBg img{
+    display: block;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+   
+}
   .sectionLeft{
     display: none;
   }
 }
 @media(max-width:650px){
+  .feedBg img{
+    display: block;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+   
+}
     .sectionRight{
       display: flex;
       flex-direction: column;
@@ -241,6 +265,13 @@
 
 }
 @media(max-width:450px){
+  .feedBg img{
+    display: block;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+   
+}
   .feedBg h1{
     font-size: 35px;
   }

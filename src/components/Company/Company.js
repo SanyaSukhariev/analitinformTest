@@ -12,10 +12,12 @@ import img2 from '../../image/company/newFoto/img1.jpg'
 import img3 from '../../image/company/newFoto/img2.jpg'
 import img4 from '../../image/company/newFoto/img3.jpg'
 import img5 from '../../image/company/newFoto/img6.jpg'
-import pigs from '../../image/company/pig.jpg'
-import animals from '../../image/company/catsDog.jpg'
-
-
+import basf from '../../image/company/icon/basf1.jpg'
+import dsm from '../../image/company/icon/dsm.jpg'
+import lucta from '../../image/company/icon/lucta.png'
+import novus from '../../image/company/icon/novus1.png'
+import cj from '../../image/company/icon/cj.png'
+import synth from '../../image/company/icon/synth.jpg'
 
 
 export class Company extends Component {
@@ -95,38 +97,79 @@ export class Company extends Component {
             <div className={classes.partners}>
               <h2>Нашi партнери</h2>
               <div className={classes.ourPartners}>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/01/dsml.png" alt="dsm" />
-                  <p><strong>DSM </strong> – вітаміни, ферменти.</p>
-                  <a href="https://www.dsm.com/anh/products-and-services/all/all-products-services-and-tools.html" target="blank">перейти на офіціальний сайт</a>
+
+              <div className={classes.partnerBlock}>
+                  <img src={basf}  alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                   <p>
+                    <strong>Концерн BASF</strong> є провідним постачальником інноваційних харчових добавок для кормів, призначених для свійських і домашніх тварин.
+                    </p>
+                    <a href="https://www.basf.com/global/en.html" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/01/movusl.png" alt="novus" />
-                  <p> <strong>Novus Internationalє</strong> - постачальником рішень в галузі охорони здоров’я з харчування для худоби, домашніх тварин і людей. Novus має співробітників, що працюють в більш ніж в 90 країнах, обслуговуючи понад 2500 клієнтів по всьому світу.</p>
-                  <a href="https://www.novusint.com/en-GB/" target="blank">перейти на офіціальний сайт</a>
+                
+            </div>
+            <div className={classes.partnerBlock}>
+                  <img src={dsm} alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                <p>
+                <strong>DSM </strong> – вітаміни, ферменти.
+                </p>
+                    <a href="https://www.dsm.com/anh/products-and-services/all/all-products-services-and-tools.html" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/05/basf.jpg" alt="basf" />
-                  <p><strong>Концерн BASF</strong> є провідним постачальником інноваційних харчових добавок для кормів, призначених для свійських і домашніх тварин.</p>
-                  <a href="https://www.basf.com/global/en.html" target="blank">перейти на офіціальний сайт</a>
+            </div>
+            <div className={classes.partnerBlock}>
+                  <img src={lucta} alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                  <p>
+                    <strong>Lucta</strong> – іспанська компанія, заснована в Барселоні в 1949 році, що займається виробництвом ароматів, смаків і кормових добавок.
+                 </p>
+                    <a href="https://www.lucta.com/divisions/flavours" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/01/luctal.png" alt="lucta" />
-                  <p><strong>Lucta</strong> – іспанська компанія, заснована в Барселоні в 1949 році, що займається виробництвом ароматів, смаків і кормових добавок.</p>
-                  <a href="https://www.lucta.com/divisions/flavours" target="blank">перейти на офіціальний сайт</a>
+            </div>
+            <div className={classes.partnerBlock}>
+                  <img src={novus} alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                <p> <strong>Novus Internationalє</strong> - постачальником рішень в галузі охорони здоров’я з харчування для худоби, домашніх тварин і людей. </p>
+                    <a href="https://www.novusint.com/en-GB/" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/01/cjl.png" alt="cj" />
-                  <p><strong>Cj Corporation</strong> – південнокорейський холдинг, що спеціалізується на виробництві продовольчих товарів, фармацевтиці та біотехнології. Є одним з світових лідерів за об’ємами синтезу органічних амінокислот.</p>
-                  <a href="https://www.dsm.com/anh/products-and-services/all/all-products-services-and-tools.html" target="blank">перейти на офіціальний сайт</a>
+                
+            </div>
+            <div className={classes.partnerBlock}>
+                  <img src={cj} alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                <p><strong>Cj Corporation</strong> – є одним з світових лідерів за об’ємами синтезу органічних амінокислот.</p>
+                    <a href="https://www.dsm.com/anh/products-and-services/all/all-products-services-and-tools.html" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
-                <div className={classes.items}>
-                  <img src="https://svitagro.com.ua/wp-content/uploads/2018/05/sy.jpg" alt="Synthèse " />
-                  <p><strong>Synthèse Elevage </strong>-характеризується якісним аспектом що спеціалізується на разробці іноваційних рішень для гігієни та годівлі сільськогосподарських тварин.</p>
-                  <a href="https://www.syntheseelevage.com/" target="blank"> перейти на офіціальний сайт</a>
+                
+            </div>
+            
+            <div className={classes.partnerBlock}>
+                  <img src={synth} alt="Partner Logo" />
+                <div className={classes.partnerInfo}>
+                <p>
+                <strong>Synthèse Elevage </strong>-характеризується якісним аспектом що спеціалізується на разробці іноваційних рішень для гігієни та годівлі сільськогосподарських тварин.
+                </p>
+                    <a href="https://www.syntheseelevage.com/" target="_blank" rel="noopener noreferrer" className={classes.partnerLink}>
+                        Відвідати сайт
+                    </a>
                 </div>
+            </div>
+            
+           
               </div>
             </div>
+            
+
             {/* contacts */}
             <div className={classes.contacts}>
               <h2>Контакти</h2>

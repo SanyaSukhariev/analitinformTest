@@ -21,7 +21,7 @@ export function Navigation(){
                             Analitinform 
                         </Link>
                     </div>
-                    <ul className={active? [classes.menu, classes.active].join(' '): [classes.menu]}>
+                    <ul onClick={()=>setActive(!active)} className={active? [classes.menu, classes.active].join(' '): [classes.menu]}>
                         <li> <Link to ='/abouteCompany'>Про компанію</Link></li>
                         <li> <Link to='/feedAdditives'>Кормові добавки</Link></li>
                         <li> <Link to='/veterinary'>Ветеринарія</Link></li>

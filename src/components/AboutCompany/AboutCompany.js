@@ -13,14 +13,16 @@ export function AboutCompany(){
                 <h1>Про компанію</h1>
                 <img src={img} alt="chicken" />
             </div>
-
+           
+            <div className={classes.informations}>
+                    <ScrollButton />
             <div className={classes.allInfo}>
-                <ScrollButton />
-
+            
                 <div className={classes.info}>
-                    <h2>Компанія ТОВ Аналітінформ</h2>
+                            <h1>Компанія ТОВ Аналітінформ</h1>
+              
                     <p>
-                        Компанія ТОВ Аналітінформ поважає і піклується про своїх клієнтів, підтримує комфортні умови
+                        Компанія <strong> ТОВ "Аналітінформ "</strong> поважає і піклується про своїх клієнтів, підтримує комфортні умови
                         партнерства, націлена на довгострокову взаємовигідну співпрацю з досягненням високих результатів.
                     </p>
                     <p>
@@ -30,16 +32,18 @@ export function AboutCompany(){
                     </p>
                     <p>
                         Мета діяльності: через забезпечення потреб власників тварин в якісних препаратах, кормових
-                        добавках і засобах сприяти розвитку тваринництва та підвищенню його конкурентноздатності; забезпечення
+                        добавках і засобах сприяти розвитку тваринництва та підвищенню його конкурентноздатності, забезпечення
                         здоров’я тварин.
                     </p>
-                </div>
+              
+              </div>
 
                 <div className={classes.imageInfo}>
                     <img className={classes.image} src={imgAbout} alt="Company" />
                 </div>
+             
             </div>
-
+            </div>
             <div className={classes.footerInfo}>
                 <div className={classes.foot}>
                     <div>
