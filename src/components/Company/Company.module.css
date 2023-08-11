@@ -342,7 +342,7 @@ body {
 @media(max-width:1400px){
   .response {
     width: 100%;
-    min-height: 90vh;
+    height: 90vh;
     object-fit: cover; 
   }
   .informations{
@@ -356,11 +356,6 @@ body {
   }
 }
 @media(max-width:1300px){
-  .response {
-    width: 100%;
-    min-height: 90vh;
-    object-fit: cover; 
-  }
   .box, .box1, .box2 {
     width: 330px;
     height: 330px;
@@ -369,11 +364,6 @@ body {
 
 
 @media(max-width:1250px){
-  .response {
-    width: 100%;
-    min-height: 90vh;
-    object-fit: cover; 
-  }
   .itemBox h2{
     font-size: 23px;
     
@@ -388,7 +378,6 @@ body {
   }
 }
 @media(max-width:1200px){
-  
   .contentInfo h1{
     font-size: 38px;
   }
@@ -430,11 +419,7 @@ body {
   }
 }
 @media(max-width:1150px){
-  .response {
-    width: 100%;
-    min-height: 80vh;
-    object-fit: cover; 
-  }
+
   .box, .box1, .box2 {
     display: flex;
     justify-content: center;
@@ -454,7 +439,11 @@ body {
  
 }
 @media(max-width:1050px){
-  
+  .response {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover; 
+  }
   .box, .box1, .box2 {
     display: flex;
     justify-content: center;
@@ -481,11 +470,7 @@ body {
 }
 
 @media(max-width:980px){
-  .response {
-    width: 100%;
-    min-height: 70vh;
-    object-fit: cover; 
-  }
+
     .contentInfo h1{
       font-size: 34px;
      
@@ -528,6 +513,7 @@ body {
     width: 210px;
     height: 210px;   
   }
+
  
   
 }
@@ -554,11 +540,7 @@ body {
 
 }
 @media(max-width:880px){
-  .response {
-    width: 100%;
-    min-height: 70vh;
-    object-fit: cover; 
-  }
+
   .box, .box1, .box2 {
     width: 180px;
     height: 180px;
@@ -600,7 +582,11 @@ body {
 }
 
 @media (max-width: 800px){
- 
+  .response {
+    min-width: 100%;
+    min-height: 70vh;
+    object-fit: cover; 
+  }
   .contentInfo h1{
     font-size: 28px;
   }
@@ -621,13 +607,9 @@ body {
   
 
 }
+
 @media (max-width: 780px){
-  .response {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    overflow: hidden;
-  }
+
   
   .contentInfo h1{
     font-size: 25px;
@@ -642,10 +624,11 @@ body {
   }
 }
 
+
 @media (max-width: 730px){
   .response {
-    width: 100%;
-   height: 70vh;
+    min-width: 100%;
+    height: 60vh;
     object-fit: cover; 
   }
   .beautifulSlider {
@@ -705,13 +688,19 @@ body {
 }
 
 @media(max-width:650px){
-  .image{
-    width: 250px;
-    height: 250px;
+  .response {
+    min-width: 100%;
+    height: 60vh;
+    object-fit: cover; 
   }
 
 }
 @media(max-width:640px){
+  .response {
+    min-width: 100%;
+    height: 50vh;
+    object-fit: cover; 
+  }
   .image{
     width: 300px;
     height: 300px;
@@ -762,6 +751,11 @@ body {
 
 }
 @media(max-width:550px){
+  .response {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover; 
+  }
   .contentInfo h1{
     font-size: 30px;
   }
@@ -806,6 +800,7 @@ body {
 }
 
 @media(max-width:480px){
+  
   .content{
     display: flex;
     flex-direction: column;
