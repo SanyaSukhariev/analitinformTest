@@ -90,7 +90,7 @@ body {
   font-family: 'Montserrat';
     font-size: 21px;
     line-height: 28px;
-    color: grey;
+   
     font-weight: 400;
     padding-bottom: 10px;
 }
@@ -108,6 +108,7 @@ body {
 .itemsInfo li{
   font-family: 'Montserrat';
   gap: 20px;
+  color: grey;
   font-weight: 400;
 }
   
@@ -841,10 +842,7 @@ body {
   }
 }
 @media(max-width:415px){
-  .response {
-    min-height: 60vh;
-    object-fit: cover; 
-  }
+  
 .contentInfo p{
   font-size: 13px;
 }
