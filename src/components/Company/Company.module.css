@@ -841,8 +841,12 @@ body {
   }
 }
 @media(max-width:415px){
+  .response {
+    min-height: 60vh;
+    object-fit: cover; 
+  }
 .contentInfo p{
-  font-size: 15px;
+  font-size: 13px;
 }
 .itemsInfo{
   font-size: 14px;
@@ -851,7 +855,9 @@ body {
   max-width: 50px;
   max-height: 50px;
 }
-
+.itemsInfo li{
+  padding: 10px;
+ }
 .box, .box1, .box2 {
   width: 180px;
   height: 180px;
