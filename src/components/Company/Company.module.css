@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat';
   margin: 0;
   padding: 0;
 }
@@ -26,7 +26,7 @@ body {
 .informations{
   margin-top: 100px;
 }
-
+/* 
 .content{
   display: flex;
   justify-content: space-around;
@@ -37,31 +37,78 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+} */
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contentInfo {
+  flex: 1;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.itemsInfo{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageInfo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
 .contentInfo h1{
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat';
   font-size: 38px;
   color:cadetblue;
+  font-weight: 500;
+
 }
 .contentInfo p{
-  font-family: 'Merriweather', serif;
-    font-size: 25px;
+  font-family: 'Montserrat';
+    font-size: 21px;
     line-height: 28px;
     color: grey;
-
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
- 
+/*  
   .imageInfo .image{
     max-width: 500px;
+    height: auto;
     border-radius: 10%;
   }
   .itemsInfo {
     line-height: 25px;
     font-weight: 400;
-  }
+  } */
 .itemsInfo li{
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat';
+  gap: 20px;
+  font-weight: 400;
 }
   
   /* OurProducts */
@@ -77,7 +124,7 @@ body {
      letter-spacing: -2px;
      font-size: 38px;
     line-height: 43px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     /* color:cadetblue; */
   }
@@ -90,7 +137,10 @@ body {
     margin-top: 100px;
   
    }
-   
+   .itemBox h2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+   }
   .box{
     display: flex;
     justify-content: center;
@@ -164,9 +214,11 @@ body {
 }
 
 
+
 /* Partners  */
 .partners{
   margin-top: 100px;
+
 }
 .partners h2{
   font-family: 'Montserrat';
@@ -174,7 +226,7 @@ body {
   letter-spacing: -2px;
   font-size: 38px;
     line-height: 43px;
-    font-weight: 600;
+    font-weight: 500;
   padding-bottom: 50px;
   color:cadetblue;
 }
@@ -207,7 +259,10 @@ body {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
-
+.partnerBlock p{
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
 .partnerBlock:hover {
   transform: translateY(-5px);
   border: 1px solid darkcyan;
@@ -215,6 +270,7 @@ body {
 
 .partnerInfo {
   margin-left: 10px;
+  font-weight: 400;
 }
 
 .partnerLink {
@@ -243,7 +299,7 @@ body {
   letter-spacing: -2px;
   font-size: 38px;
   line-height: 43px;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 50px;
   color:cadetblue;
 }
@@ -260,8 +316,8 @@ body {
    
 }
 .contactsInfo p{
-    font-family: Montserrat;
-    font-weight: 600;
+    font-family: 'Montserrat';
+    font-weight: 400;
     color:dimgrey;
     font-size: 18px;
 }
@@ -280,11 +336,59 @@ body {
 /* Стили для изображений в слайдах */
 
 /* Медиа-запрос для адаптации стилей на маленьких экранах */
-@media(max-width:1200px){
+
+
+
+@media(max-width:1400px){
   .response {
-    max-width: 64%; 
+    width: 100%;
+    min-height: 90vh;
     object-fit: cover; 
   }
+  .informations{
+   margin-top: 50px;
+  }
+  .box, .box1, .box2 {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;   
+  }
+}
+@media(max-width:1300px){
+  .response {
+    width: 100%;
+    min-height: 90vh;
+    object-fit: cover; 
+  }
+  .box, .box1, .box2 {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+
+@media(max-width:1250px){
+  .response {
+    width: 100%;
+    min-height: 90vh;
+    object-fit: cover; 
+  }
+  .itemBox h2{
+    font-size: 23px;
+    
+}
+
+.contentInfo h1{ 
+  text-align: center;
+}
+  .box, .box1, .box2 {
+    width: 305px;
+    height: 305px;
+  }
+}
+@media(max-width:1200px){
+  
   .contentInfo h1{
     font-size: 38px;
   }
@@ -307,39 +411,9 @@ body {
     margin: 0 auto;
     font-size: 15px;
   }
-  .response{
-    width: 70%;
-  }
+
 } 
 
-@media(max-width:1400px){
-  .response {
-    max-width: 83%;
-    min-height: 100vh;
-    object-fit: cover; 
-  }
-  .informations{
-   margin-top: 50px;
-  }
-  .box, .box1, .box2 {
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 350px;   
-  }
-}
-
-
-@media(max-width:1250px){
-  .itemBox h2{
-    font-size: 23px;
-    
-}
-  .box, .box1, .box2 {
-    width: 305px;
-    height: 305px;
-  }
-}
 
 /* Адаптация для разных разрешений и устройств */
 
@@ -356,6 +430,11 @@ body {
   }
 }
 @media(max-width:1150px){
+  .response {
+    width: 100%;
+    min-height: 80vh;
+    object-fit: cover; 
+  }
   .box, .box1, .box2 {
     display: flex;
     justify-content: center;
@@ -365,9 +444,17 @@ body {
   .itemBox h2{
     font-size: 19px;
   }
+  .contentInfo p{
+    font-size: 18px;
+
+  }
+  .itemsInfo li{
+    padding: 5px;
+   }
  
 }
 @media(max-width:1050px){
+  
   .box, .box1, .box2 {
     display: flex;
     justify-content: center;
@@ -375,36 +462,9 @@ body {
     height: 250px;   
   }
 }
-@media(max-width:1200px){
- 
-  .imageInfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contentInfo p{
-    font-size: 20px;
-
-  }
-  .image{
-    width: 450px;
-    height: 450px;
-  }
-  .ourProdContent{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: auto;
-  }
-
-  .contacts h2{
-    font-size: 38px;
-   
-    color: cadetblue;
-  }
-}
 
 @media(max-width:1030px){
+
 .imageInfo .image{
   width: 380px;
   height: 380px;
@@ -421,6 +481,11 @@ body {
 }
 
 @media(max-width:980px){
+  .response {
+    width: 100%;
+    min-height: 70vh;
+    object-fit: cover; 
+  }
     .contentInfo h1{
       font-size: 34px;
      
@@ -428,9 +493,7 @@ body {
     .contentInfo p{
       font-size: 18px;
     }
-    .response{
-      width: 60%;
-    }
+  
     .ourProducts h1{
       font-size: 35px;
     }
@@ -443,9 +506,7 @@ body {
     .contacts h2{
       font-size: 35px;
     }
-    .partnerInfo{
-      width: 100%;
-    }
+   
     .partnerInfo p{
       font-size: 12px;
     }
@@ -473,14 +534,14 @@ body {
 
 @media (max-width: 905px){
   .contentInfo h1{
-    font-size: 31px;
+    font-size: 28px;
    
   }
   .contentInfo p{
-    font-size: 18px;
+    font-size: 17px;
   }
   .itemsInfo{
-    font-size: 12px;
+    font-size: 14px;
   }
   .itemBox h2{
     font-size: 15px;
@@ -490,11 +551,14 @@ body {
   width: 200px;
   height: 200px;
 }
-  .response{
-  width: 50%;
-}
+
 }
 @media(max-width:880px){
+  .response {
+    width: 100%;
+    min-height: 70vh;
+    object-fit: cover; 
+  }
   .box, .box1, .box2 {
     width: 180px;
     height: 180px;
@@ -509,20 +573,10 @@ body {
       .content{
         gap: 50px;
       }
-      .contentInfo h1{
-        
-        text-align: center;
-        letter-spacing: 0;
-      }
-      br {
-        display: none;
-      }
-      .contentInfo{
-        width: 50%;
-      }
+      
+ 
       .contentInfo p{
-        display: block;
-          text-align:justify;
+        font-size: 16px;
       }
       .box, .box1, .box2 {
         width: 170px;
@@ -546,9 +600,7 @@ body {
 }
 
 @media (max-width: 800px){
-  .contentInfo{
-    width: 80%;
-  }
+ 
   .contentInfo h1{
     font-size: 28px;
   }
@@ -570,13 +622,20 @@ body {
 
 }
 @media (max-width: 780px){
+  .response {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+  }
   
   .contentInfo h1{
     font-size: 25px;
   }
   .contentInfo p{
-    font-size: 16px;
+    font-size: 14px;
   }
+
   .box, .box1, .box2 {
     width: 160px;
     height: 160px;
@@ -584,9 +643,25 @@ body {
 }
 
 @media (max-width: 730px){
+  .response {
+    width: 100%;
+   height: 70vh;
+    object-fit: cover; 
+  }
+  .beautifulSlider {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+  }
+  
   .box, .box1, .box2 {
     width: 140px;
     height: 140px;
+  }
+  .imageInfo .image{
+    width: 320px;
+    height: 320px;
   }
   .ourProducts h1{
     font-size: 31px;
@@ -597,11 +672,24 @@ body {
   .contacts h2{
     font-size: 31px;
   }
+  .contentInfo p{
+    font-size: 11px;
+  }
+  .itemsInfo{
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 700px){
-  .contentInfo{
-    width: 80%;
+  
+  .contentInfo h1{
+    font-size: 28px;
+  }
+  .contentInfo p{
+    font-size: 15px;
+  }
+  .itemsInfo{
+    font-size: 14px;
   }
   .itemBox h2{
     font-size: 13px;
@@ -609,6 +697,10 @@ body {
   .box, .box1, .box2 {
     width: 130px;
     height: 130px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
   }
 }
 
