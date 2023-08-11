@@ -616,7 +616,7 @@ body {
     font-size: 25px;
   }
   .contentInfo p{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .box, .box1, .box2 {
@@ -624,6 +624,7 @@ body {
     height: 160px;
   }
 }
+
 
 
 @media (max-width: 730px){

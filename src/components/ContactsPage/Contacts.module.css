@@ -21,9 +21,9 @@
     top: 48%;
     left: 20%;
     color: white;
-    font-family: Montserrat;
-    font-size: 58px;
+   font-family:' Montserrat';
     font-weight: 500;
+    font-size: 58px;
     z-index: 2;
 }
 .contactsContent{
@@ -35,17 +35,17 @@
 
 
 .contactsContent h2{
-    font-family: Montserrat;
+     font-family:' Montserrat';
+    font-weight: 500;
     font-size: 28px;
-    font-weight: 700;
     color:cadetblue;
     
 }
 
 
 .itemsContact p{
-    font-family: Montserrat;
-    font-weight: 600;
+     font-family:' Montserrat';
+    font-weight: 400;
     color:dimgrey;
     font-size: 18px;
 }
@@ -86,8 +86,8 @@
     display: block;
     text-decoration: none;
     color:cadetblue;
-    font-size: 21px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .itemsContact a:hover {

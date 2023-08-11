@@ -33,7 +33,7 @@
   z-index: 2;
   font-family:' Montserrat';
   font-size: 58px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .allInfo {
@@ -53,13 +53,14 @@
 }
 
 .info h1{
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat';
   font-size: 38px;
   line-height: 43px;
+  font-weight: 500;
   color:cadetblue;
 }
 .info p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat';
     font-size: 23px;
     line-height: 28px;
     color: grey;
@@ -93,14 +94,15 @@
 }
 
 .foot h4 {
-  font-family: Montserrat;
-  font-weight: 600;
+  font-family: 'Montserrat';
+  font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 20px;
   flex-basis: 100%;
 }
 
 .foot li {
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -272,7 +274,12 @@
 }
 
 @media(max-width:415px){
-  
+  .info p{
+    display: block;
+    text-align:justify;
+    font-size: 15px;
+   
+  }
   .foot li{
     font-size: 10px;
   }
